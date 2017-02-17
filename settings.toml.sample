@@ -1,0 +1,16 @@
+[proxies]
+hostname = "..."
+ports = [..., ...]
+
+[sentry]
+dsn = "..."
+
+[sqlx]
+database = "MED-14"
+hostname = "0.0.0.0"
+password = "..."
+port = "5432"
+username = "..."
+
+[others]
+consumers = 16
