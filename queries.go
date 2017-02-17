@@ -89,7 +89,7 @@ func addresses_update(database *sqlx.DB, address Address, results []Result) {
 		database.NamedExec(statement, result)
 	}
 
-	statement := `UPDATE addresses SET status =: status WHERE id = :id`
+	statement := `UPDATE addresses SET status = :status WHERE id = :id`
 	database.NamedExec(statement, address)
 }
 
